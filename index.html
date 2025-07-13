@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bar & Restaurant Billing - Kenya</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <h1>  WHITE HOUSE LOUNGE Billing System</h1>
+        <p>Location: Musembe, Along Eldoret Webuye highway</p>
+    </header>
+
+    <main>
+        <section class="billing">
+            <h2>Order Billing</h2>
+
+            <div class="item">
+                <label for="beer">Beer (KES 250):</label>
+                <input type="number" id="beer" value="0" min="0">
+            </div>
+
+            <div class="item">
+                <label for="nyama">Nyama Choma (KES 1200):</label>
+                <input type="number" id="nyama" value="0" min="0">
+            </div>
+
+            <div class="item">
+                <label for="soda">Soda (KES 100):</label>
+                <input type="number" id="soda" value="0" min="0">
+            </div>
+
+            <div class="item">
+                <label for="ugali">Ugali (KES 100):</label>
+                <input type="number" id="ugali" value="0" min="0">
+            </div>
+
+            <button onclick="calculateTotal()">Calculate Bill</button>
+
+            <div class="result">
+                <h3>Total Bill: <span id="total">KES 0</span></h3>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Bar & Restaurant Kenya</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
